@@ -7,22 +7,31 @@
     --ccindigo:#0081A7;
 }
 * {
-    color:#F07167;
     font-family: Courier New, 'Courier', monospace;
+    border: #00AFB9 solid 2px;
 }
 /* 
 this will affect the <body></body> tag.
 you can use this to style any HTML tag, like <p>, <div>, <span>, <a>, etc.
 */
 body { 
-    background-color: var(--ccbeige);
+    background-color:lightgrey;
 }
-p{
+p {
     font-family: 'Verdana', Geneva, Tahoma, sans-serif;
     font-size: medium;
 }
+
 h1 {
     text-align: center;
+}
+ul {
+    list-style-type: none;
+    width: 200px;
+
+}
+li a:hover{
+    background-color: #00AFB9;
 }
 /* 
 this will affect elements with the 'cool' class, as shown by the '.'
@@ -30,8 +39,9 @@ e.g <div class = "cool"><div>
 
 classes can be applied to multiple elements
 */
-.cool { 
-    color: white;
+.intro{
+    position-anchor: right;
+    position:relative;
 }
 
 /* 
