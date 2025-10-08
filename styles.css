@@ -1,16 +1,17 @@
 :root {
-    --ccbeige: #FDFCDC;
-    --ccorange: #FED9B7;
-    --ccred: #F07167;
-    --ccblue: #00AFB9;
-    --ccindigo: #0081A7;
+    --ccbrown: rgb(81, 44, 44);
+
 }
 
 * {
     font-family: cursive;
+    color: rgb(81, 44, 44);
+    box-sizing: border-box;
+    
 }
 
 main {
+    max-width: 1000px;
     flex: 1;
     margin: 20px 0 0 10%;
     border-left: 2px black solid;
@@ -31,10 +32,13 @@ this will affect the <body></body> tag.
 you can use this to style any HTML tag, like <p>, <div>, <span>, <a>, etc.
 */
 body {
+    
     background-image: url(bg.jpg);
+    background-color: #cccccc; /*always set if image unavilable*/
     background-position: center;
-    background-size: 40%;
-     height: 100vh;
+    background-size:auto;
+    background-repeat: repeat-x;
+
 }
 /*===============================TYPOGRAPHY===========================*/
 
@@ -49,13 +53,14 @@ h1 {
 
 ul {
     list-style-type: none;
-    width: 200px;
+    max-width: 200px;
     position: relative;
     display: flex;
+    margin: 20% 20%;
 }
 
 li a:hover {
-    background-color: #00AFB9;
+    background-color: rgba(165, 42, 42, 0.4);
 }
 
 
@@ -65,19 +70,27 @@ nav {
     width: fit-content;
     height: fit-content;
     padding: 5px;
-    float: right;
-    background: #f4ede6be;
+    float: left;
+    min-width: 150px;
+    flex-wrap: wrap;
     
+    align-items: space-evenly;
+    
+}
+nav ul{
+    
+    padding: 25%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 3px var(--ccbrown) solid;
+    background: #f4ede6be;
 }
 /*===============================container===========================*/
 
 /*===============================CLASSES===========================*/
-.container {
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 50%;
-}
+
 .intro {
     position-anchor: right;
     position: relative;
@@ -87,6 +100,7 @@ nav {
     float: left;
     width: 200px;
     margin: 10px;
+    border: 5px #000000be dotted;
 }
 
 div.gallery {
