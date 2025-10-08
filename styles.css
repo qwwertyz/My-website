@@ -11,20 +11,24 @@
 
 main {
     max-width: 1000px;
-    flex: 1;
-    margin: 20px 0 0 10%;
-    border-left: 2px black solid;
-    border-right: 2px black solid;
+    margin: 0 20%;
+    border-left: 3px var(--ccbrown) solid;
+    border-right: 3px var(--ccbrown) solid;
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.767);
-    flex-wrap: wrap;
+    
 
 }
 
 .layout {
-    display: flex;
-    align-items: flex-start;
-    padding: 1rem;
+    flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 2rem;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* 
@@ -38,7 +42,7 @@ body {
     /*always set if image unavilable*/
     background-position: center;
     background-size: auto;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
 
 }
 
@@ -69,11 +73,12 @@ li a:hover {
 
 nav {
     max-width: 200px;
+    min-width: 150px;
     width: fit-content;
     height: fit-content;
     padding: 5px;
     float: left;
-    min-width: 150px;
+    
     flex-wrap: wrap;
 
     align-items: space-evenly;
@@ -92,12 +97,11 @@ nav ul {
 }
 
 /*===============================container===========================*/
-
-/*===============================CLASSES===========================*/
 .container {
     border: 4px var(--ccbrown) dotted;
     border-radius: 15px;
 }
+
 .content{
     flex: 1;
   display: flex;
@@ -114,9 +118,13 @@ nav ul {
   gap: 1rem;
 }
 .left{
-    flex-grow: 3;
+    flex-grow: 4;
     flex-direction: row;
+    
 }
+
+/*===============================CLASSES===========================*/
+
 .footer {
     font-size:smaller;
     margin: 10px 10px;
@@ -135,28 +143,39 @@ nav ul {
     margin: 10px;
 }
 
-div.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+div.gallery-container {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    gap: 2em;
 }
 
 div.gallery-item {
-    margin: 5px;
-    border: 1px solid black;
-    width: 180px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    
 }
+div.image{
+overflow: hidden;
 
+
+}
 div.gallery-item img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: .5s ease-in-out;
 
 }
 
-div.gallery-item.desc {
+div.gallery-item.text {
     padding: 15px;
     text-align: center;
 }
+
 
 /* Start https://www.cursors-4u.com */
 * {
