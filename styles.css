@@ -10,32 +10,26 @@
 }
 
 main {
+
     max-width: 1000px;
-    min-height: 700px;
-    margin: 0 20%;
+    min-height: 500px;
+    margin-left: 10%;
     border-left: 3px var(--ccbrown) solid;
     border-right: 3px var(--ccbrown) solid;
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.767);
-    
+
+
 
 }
 
 .layout {
-    flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-  gap: 2rem;
-  flex-direction: column;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
 }
 
-/* 
-this will affect the <body></body> tag.
-you can use this to style any HTML tag, like <p>, <div>, <span>, <a>, etc.
-*/
 body {
 
     background-image: url(images/bg.jpg);
@@ -64,6 +58,7 @@ ul {
     position: relative;
     display: flex;
     margin: 20% 20%;
+    padding-inline-start: 0;
 }
 
 li a:hover {
@@ -75,81 +70,92 @@ li a:hover {
 nav {
     max-width: 200px;
     min-width: 150px;
-    width: fit-content;
+    min-height: 90px;
     height: fit-content;
-    padding: 5px;
     float: left;
-    
-    flex-wrap: wrap;
 
-    align-items: space-evenly;
 
 }
 
 nav ul {
-
-    padding: 25%;
     margin: 10%;
     display: flex;
     flex-direction: column;
+    align-items: space-evenly;
 
-    border: 3px var(--ccbrown) solid;
-    background: #f4ede6be;
 }
 
 /*===============================container===========================*/
-.container {
-    border: 4px var(--ccbrown) dotted;
-    border-radius: 15px;
+.content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.content{
-    flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-  gap: 2rem;
-  flex-grow: 3;
+.box {
+    border: 4px var(--ccbrown) dotted;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.767);
+    text-align: center;
+    max-width: 150px;
+    margin: 1em;
 }
-.right{
+
+
+.right {
     flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    /* smaller */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.left{
-    flex-grow: 4;
-    flex-direction: row;
-    
+
+.left {
+    flex: 3;
+    width: 100%
 }
 
 /*===============================CLASSES===========================*/
 
-.footer {
-    font-size:smaller;
-    margin: 10px 10px;
-  text-align: left;
-  padding: 1rem;
-  font-weight: bold;
-}
-.intro {
-    position-anchor: right;
-    position: relative;
-}
-.ref-img{
+
+
+.ref-img {
     max-width: 300px;
     margin: 1em;
 }
+
 .float-img {
-    float: left;
+    float: none;
     width: 200px;
     margin: 10px;
+
 }
 
+
+
+.meme-box {
+    float: left;
+    text-align: left;
+    width: fit-content;
+    max-width: 350px;
+    border: 4px var(--ccbrown) dotted;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin: 1em;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: smaller;
+}
+/*==================================gallery=======================*/
 div.gallery-container {
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 300px;
     gap: 2em;
 }
@@ -158,14 +164,16 @@ div.gallery-item {
     width: 100%;
     height: 100%;
     position: relative;
-    
-    
-}
-div.image{
-overflow: hidden;
 
 
 }
+
+div.image {
+    overflow: hidden;
+
+
+}
+
 div.gallery-item img {
     width: 100%;
     height: 100%;
@@ -176,11 +184,9 @@ div.gallery-item img {
 }
 
 div.gallery-item.text {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }
-
-
 /* Start https://www.cursors-4u.com */
 * {
     cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol336.cur), auto !important;
