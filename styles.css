@@ -11,6 +11,7 @@
 
 main {
     max-width: 1000px;
+    min-height: 700px;
     margin: 0 20%;
     border-left: 3px var(--ccbrown) solid;
     border-right: 3px var(--ccbrown) solid;
@@ -136,7 +137,10 @@ nav ul {
     position-anchor: right;
     position: relative;
 }
-
+.ref-img{
+    max-width: 300px;
+    margin: 1em;
+}
 .float-img {
     float: left;
     width: 200px;
