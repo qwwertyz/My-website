@@ -14,9 +14,7 @@ main {
     max-width: 1000px;
     min-height: 500px;
     margin-left: 10%;
-    border-left: 3px var(--ccbrown) solid;
-    border-right: 3px var(--ccbrown) solid;
-    padding: 0 20px;
+    margin-top: 1rem;
     background-color: rgba(255, 255, 255, 0.767);
 
 
@@ -32,12 +30,13 @@ main {
 
 body {
 
-    background-image: url(images/bg.jpg);
+    background: #e8c0a7;
+background: linear-gradient(180deg, rgba(167, 211, 232, 1) 0%, rgba(237, 237, 237, 1) 100%);
+min-height: 100vh;
     background-color: #cccccc;
     /*always set if image unavilable*/
     background-position: center;
     background-size: auto;
-    background-repeat: repeat;
 
 }
 
