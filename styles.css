@@ -4,26 +4,23 @@
 }
 
 * {
-    font-family: cursive;
     color: rgb(81, 44, 44);
     box-sizing: border-box;
 }
 
 main {
-
     max-width: 1000px;
     min-height: 500px;
     margin-left: 10%;
     margin-top: 1rem;
-    background-color: rgba(255, 255, 255, 0.767);
-
-
+    border: solid black 1px;
 
 }
 
 .layout {
     display: flex;
     align-items: flex-start;
+    flex-direction: row-reverse;
     padding: 1rem;
     gap: 1rem;
 }
@@ -31,7 +28,7 @@ main {
 body {
 
     background: #e8c0a7;
-background: linear-gradient(180deg, rgba(167, 211, 232, 1) 0%, rgba(237, 237, 237, 1) 100%);
+background: linear-gradient(180deg, rgb(207, 162, 123) 0%, rgba(237, 237, 237, 1) 100%);
 min-height: 100vh;
     background-color: #cccccc;
     /*always set if image unavilable*/
