@@ -1,21 +1,16 @@
-@import url("styles_halloween.css");
-
 :root {
     --ccbrown: rgb(81, 44, 44);
 
 }
 
 * {
-    color: rgb(81, 44, 44);
     box-sizing: border-box;
 }
 
 main {
     max-width: 1000px;
     min-height: 500px;
-    margin-left: 10%;
-    margin-top: 1rem;
-    border: solid black 1px;
+    border: solid rgb(255, 255, 255) 1px !important;
 
 }
 
@@ -27,10 +22,8 @@ main {
 }
 
 body {
-
-    background: #e8c0a7;
-background: linear-gradient(180deg, rgb(207, 162, 123) 0%, rgba(237, 237, 237, 1) 100%);
-min-height: 100vh;
+    background-image: url(images/bgbg.png) ;  
+    min-height: 100vh;
     background-color: #cccccc;
     /*always set if image unavilable*/
     background-position: center;
@@ -39,14 +32,30 @@ min-height: 100vh;
 }
 
 /*===============================TYPOGRAPHY===========================*/
-
+header{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+}
+.top-elements {
+  display: flex; /* keep your two elements in a row */
+  gap: 20px; /* space between them */
+}
 p {
     font-size: medium;
 }
 
 h1 {
     text-align: center;
-    font-family: cursive;
+    font-family: "Creepster", cursive;
 }
 
 ul {
@@ -83,6 +92,7 @@ nav ul {
 }
 
 /*===============================container===========================*/
+
 .content {
     display: flex;
     align-items: flex-start;
@@ -115,7 +125,13 @@ nav ul {
 
 /*===============================CLASSES===========================*/
 
+.pfp {
+    width: 100%;
+    max-width: 6%;
+    border-radius: 5%;
+    margin-right: 30px;
 
+}
 
 .ref-img {
     max-width: 300px;
@@ -167,8 +183,6 @@ div.gallery-item {
 
 div.image {
     overflow: hidden;
-
-
 }
 
 div.gallery-item img {
