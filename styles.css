@@ -8,10 +8,8 @@
     --white: #ffffff;
 }
 
-/*===============================RESET===========================*/
 * {
     font-family: "Courier New", Courier, monospace;
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -82,7 +80,7 @@ header {
 
 
 
-h1 {
+h1, h2,h3 {
     font-family: 'Special Elite', monospace;
     margin-bottom: 0.5rem;
 }
@@ -155,7 +153,11 @@ main {
     gap: 1rem;
 }
 
-/*===============================BOXES===========================*/
+/*===============================CLASS===========================*/
+.extra-stuff {
+    margin-block-start: 100px;
+    line-height: 80%;
+}
 .box, .meme-box {
     border: 4px dotted var(--teal);
     border-radius: 15px;
@@ -209,6 +211,7 @@ div.gallery-item img:hover {
 div.gallery-item.text {
     padding: 0.5rem;
     text-align: center;
+    color: var(--teal);
 }
 
 /*===============================FOOTER===========================*/
