@@ -1,24 +1,128 @@
-@import url("styles_halloween.css");
+/*@import url("styles_halloween.css");*/
 
 :root {
-    --ccbrown: rgb(81, 44, 44);
-
+    --graphite: #353535; 
+    --teal: #3c6e71;
+    --dustgray: #d9d9d9;
+    --yaleblue: #284b63;
+    --white: #ffffff;
 }
 
+/*===============================RESET===========================*/
 * {
-    color: rgb(81, 44, 44);
+    font-family: "Courier New", Courier, monospace;
+
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/*===============================BODY===========================*/
+body {
+    background: var(--graphite);
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0 20%;
+}
+
+/*===============================HEADER===========================*/
+header {
+    background-color: var(--teal);
+    justify-content: center;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* allows stacking on mobile */
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--teal);
+    object-fit: cover;
+}
+.site-header .header-nav {
+    justify-content: center;
+}
+.site-header .header-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    padding-left: 0;
+}
+
+.site-header .header-nav a {
+
+    color: var(--white);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Responsive adjustments for header nav */
+@media (max-width: 600px) {
+    .site-header .header-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+
+
+h1 {
+    font-family: 'Special Elite', monospace;
+    margin-bottom: 0.5rem;
+}
+
+/*===============================NAV===========================*/
+nav {
+    max-width: 200px;
+    min-width: 150px;
+    color: var(--graphite)
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white
+}
+
+/*===============================MAIN===========================*/
 main {
     max-width: 1000px;
     min-height: 500px;
-    margin-left: 10%;
-    margin-top: 1rem;
-    border: solid black 1px;
-
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid var(--teal);
+    border-radius: 10px;
 }
 
+/*===============================LAYOUT===========================*/
 .layout {
     display: flex;
     align-items: flex-start;
@@ -26,167 +130,98 @@ main {
     gap: 1rem;
 }
 
-body {
-
-    background: #e8c0a7;
-background: linear-gradient(180deg, rgb(207, 162, 123) 0%, rgba(237, 237, 237, 1) 100%);
-min-height: 100vh;
-    background-color: #cccccc;
-    /*always set if image unavilable*/
-    background-position: center;
-    background-size: auto;
-
+.left {
+    flex: 3;
 }
-
-/*===============================TYPOGRAPHY===========================*/
-
-p {
-    font-size: medium;
-}
-
-h1 {
-    text-align: center;
-    font-family: cursive;
-}
-
-ul {
-    list-style-type: none;
-    max-width: 200px;
-    position: relative;
-    display: flex;
-    margin: 20% 20%;
-    padding-inline-start: 0;
-}
-
-li a:hover {
-    background-color: rgba(165, 42, 42, 0.4);
-}
-
-
-
-nav {
-    max-width: 200px;
-    min-width: 150px;
-    min-height: 90px;
-    height: fit-content;
-    float: left;
-
-
-}
-
-nav ul {
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-
-}
-
-/*===============================container===========================*/
-.content {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.box {
-    border: 4px var(--ccbrown) dotted;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.767);
-    text-align: center;
-    max-width: 150px;
-    margin: 1em;
-}
-
 
 .right {
     flex: 1;
-    /* smaller */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
 }
 
-.left {
-    flex: 3;
-    width: 100%
+/*===============================BOXES===========================*/
+.box, .meme-box {
+    border: 4px dotted var(--teal);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    padding: 1rem;
+    margin: 1em 0;
+    max-width: 100%;
 }
 
-/*===============================CLASSES===========================*/
-
-
-
-.ref-img {
+.ref-img, .float-img {
     max-width: 300px;
-    margin: 1em;
+    margin: 1em auto;
+    display: block;
 }
 
 .float-img {
-    float: none;
     width: 200px;
-    margin: 10px;
-
 }
 
-
-
-.meme-box {
-    float: left;
-    text-align: left;
-    width: fit-content;
-    max-width: 350px;
-    border: 4px var(--ccbrown) dotted;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.767);
-    margin: 1em;
-
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    font-size: smaller;
-}
-/*==================================gallery=======================*/
+/*===============================GALLERY===========================*/
 div.gallery-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 300px;
-    gap: 2em;
+    gap: 1.5em;
+    margin: 1em 0;
 }
 
 div.gallery-item {
     width: 100%;
     height: 100%;
     position: relative;
-
-
-}
-
-div.image {
     overflow: hidden;
-
-
+    border-radius: 10px;
+    background-color: var(--dustgray);
 }
 
 div.gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     cursor: pointer;
-    transition: .5s ease-in-out;
+    transition: transform 0.3s ease;
+}
 
+div.gallery-item img:hover {
+    transform: scale(1.05);
 }
 
 div.gallery-item.text {
-    padding: 5px;
+    padding: 0.5rem;
     text-align: center;
 }
-/* Start https://www.cursors-4u.com */
+
+/*===============================FOOTER===========================*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--yaleblue);
+    color: var(--white);
+    font-size: smaller;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/*===============================LINKS & TEXT===========================*/
+a {
+    color: var(--teal);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white
+}
+
+/* Optional cursor fun */
 * {
     cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol336.cur), auto !important;
 }
-
-/* End https://www.cursors-4u.com */
