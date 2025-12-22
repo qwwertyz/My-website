@@ -28,6 +28,7 @@ body {
 
 /*===============================HEADER===========================*/
 header {
+    
     background-color: var(--teal);
     justify-content: center;
 }
@@ -48,6 +49,7 @@ header {
     object-fit: cover;
 }
 .site-header .header-nav {
+    
     justify-content: center;
 }
 .site-header .header-nav ul {
@@ -84,7 +86,18 @@ h1 {
     font-family: 'Special Elite', monospace;
     margin-bottom: 0.5rem;
 }
+h3 a {
+  color: white; /* same as heading text */
+  font-weight: inherit;
+  text-decoration:dashed;
+}
 
+main img{
+    max-width: 100%;   /* image will never exceed its container width */
+    height: auto;      /* maintain aspect ratio */
+    display: block;    /* remove inline spacing */
+    margin: 10px auto;    /* center if needed */
+}
 /*===============================NAV===========================*/
 nav {
     max-width: 200px;
@@ -109,7 +122,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: white
+    background-color: white;
+    text-decoration: underline;
 }
 
 /*===============================MAIN===========================*/
