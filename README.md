@@ -3,8 +3,7 @@
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
 
-Hello! This is a personal website I made with tribute! I wanted to make this mainly so I would have a place to share my thoughts and art. 
-I do have socials but I have the feeling that there's always a certain pressure to keep posting which I don't like. This'll probably become a place I check-in everyday and post something.
+Hello! This is a personal website I made for Athena Awards! I wanted to make this mainly so I would have a place to share my thoughts and art. Update: also shipping to other ysws since I work on this continuously
 
 I started making this by following the tutorial on https://tribute.athena.hackclub.com/, then I shifted to grinding on codeacadmy and w3schools to learn to code, but also chatgpt for debugging.
 The hardest part of all this is definitely making the flexbox work. I followed different tutorials for different parts of the project I wanted to make, but I just ended up with
