@@ -154,6 +154,12 @@ main {
 }
 
 /*===============================CLASS===========================*/
+.blogbox {
+    border: 4px solid var(--teal);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
 .extra-stuff {
     margin-block-start: 100px;
     line-height: 80%;
