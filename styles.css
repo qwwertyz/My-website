@@ -1,5 +1,3 @@
-/*@import url("styles_halloween.css");*/
-
 :root {
     --graphite: #353535; 
     --teal: #3c6e71;
@@ -154,9 +152,9 @@ main {
 }
 
 /*===============================CLASS===========================*/
-.blogbox {
+.blog-box {
+    margin: 20px 10px;
     border: 4px solid var(--teal);
-    border-radius: 15px;
     padding: 1rem;
 }
 
@@ -182,6 +180,25 @@ main {
 
 .float-img {
     width: 200px;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;      /* match your image size */
+    height: 50px;
+    border: none;
+    background: none;  /* remove default button style */
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#back-to-top img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
 }
 
 /*===============================GALLERY===========================*/
@@ -244,7 +261,6 @@ p {
     color: white
 }
 
-/* Optional cursor fun */
 * {
-    cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol336.cur), auto !important;
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat926.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat926.png), auto !important;} /* End https://www.cursors-4u.com */
 }
