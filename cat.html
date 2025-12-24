@@ -9,10 +9,11 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body class="cat-html">
     <main>
         <a href="index.html">back</a>
         <h1>Stuff</h1>
+        <br>
         <p>I like cats! Although I personally don't have any cats, my neighbor does and I consider the cats
             (half)mine. Also, I take care of them reguarly because my neighbors travel a lot betweeen Italy and their
             place of residence here.</p>
@@ -48,21 +49,47 @@
 
             </div>
         </div>
+        <p>if i were ever to get a cat, I'd probably want to rescue a cat. I don't really have a preference for species,
+            but maine coon, siamese, persian would all be really cool.</p>
+        <p>I'd also like a needy cat, the kind that wouldn't mind to be squished and loved and cuddled all day.</p>
+        <p>I also have a list ready for future cats depending on their fur pattern: black: Wifi, garfield: garfield or
+            mango, gray: Oreo, yello/white, QAQ egg yolk, brown mixiu, calico doriyaki</p>
         <br>
         <h3>honorable mention:</h3>
         <p>Moby, my friend's orange kitty. He's a silly cat and is kind of chubby. Named after the infamous Moby
             D***, he reigns the open seas with his unsinkable body of a boat.</p>
         <img src="cat/moby silly.png" alt="moby">
         <img src="cat/moby loafing.jpeg" alt="moby loafing">
+        <br>
+        <p>There's also a lot of fictional kitties I like...</p>
+        <p>wuhuang</p>
+        <p>garfield</p>
+        <p>in china there's this trend called 'silence books' and they're basciall magnet books so you can move
+            characters around and play-pretend. I'm trying to do one of these for Wuhuang this summer</p>
     </main>
     <div class="meme-box">
         <span>
-            <h3>Daily meme</h3>
-            <p>it's broken ahhhhhh how do i backend</p>
+            <h3 style="color: gray;">Daily meme(more like it updates on refresh)</h3>
+            <p style="color: gray;">it's broken ahhhhhh how do i backend</p>
         </span>
-        <img src="memes/image(6).png" alt="daily meme" class=" float-img">
+        <img id="daily-meme" src="memes/image(6).png" alt="daily meme" class=" float-img">
     </div>
+    <script>
+        const images = [
+  'memes/image.png',
+  'memes/image(1).png',
+  'memes/image(2).png',
+  'memes/image(3).png',
+  'memes/image(4).png',
+  'memes/image(5).png',
+  'memes/image(6).png',
+  'memes/image(7).png'
+];
 
+        const img = document.getElementById('daily-meme');
+        const randomIndex = Math.floor(Math.random() * images.length);
+        img.src = images[randomIndex];
+    </script>
 
     <button id="back-to-top" style="display:block; position:fixed; bottom:20px; right:20px;">
         <img src="images/cat.jpg" alt="Back to top">

@@ -126,9 +126,10 @@ main {
     max-width: 1000px;
     min-height: 500px;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid var(--teal);
     border-radius: 10px;
+    background-color: var(--graphite);
 }
 
 /*===============================LAYOUT===========================*/
@@ -210,6 +211,11 @@ main {
   position: static;
   display: block;
 }
+.cat-html {
+    background: url('images/cat bg.jpg') repeat center center;
+
+}
+
 /*===============================GALLERY===========================*/
 div.gallery-container {
     display: grid;
@@ -226,11 +232,14 @@ div.gallery-item {
     overflow:hidden;
     border-radius: 10px;
     background-color: var(--dustgray);
+    height: 250px; 
 }
 
 div.gallery-item img {
     width: 100%;
-    min-height: 300px;
+    height : 100%;
+    display: block;  /* THIS removes the tiny top/bottom gap */
+    min-height: 270px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
