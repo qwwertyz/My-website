@@ -66,6 +66,8 @@
         <p>garfield</p>
         <p>in china there's this trend called 'silence books' and they're basciall magnet books so you can move
             characters around and play-pretend. I'm trying to do one of these for Wuhuang this summer</p>
+            <img src="images/wuhuang.png" alt="wuhuang">
+            <p>*need to upload photo blind box</p>
     </main>
     <div class="meme-box">
         <span>
@@ -75,21 +77,26 @@
         <img id="daily-meme" src="memes/image(6).png" alt="daily meme" class=" float-img">
     </div>
     <script>
+
         const images = [
-  'memes/image.png',
-  'memes/image(1).png',
-  'memes/image(2).png',
-  'memes/image(3).png',
-  'memes/image(4).png',
-  'memes/image(5).png',
-  'memes/image(6).png',
-  'memes/image(7).png'
-];
+            'memes/image.png',
+            'memes/image(1).png',
+            'memes/image(2).png',
+            'memes/image(3).png',
+            'memes/image(4).png',
+            'memes/image(5).png',
+            'memes/image(6).png',
+            'memes/image(7).png'
+        ];
 
         const img = document.getElementById('daily-meme');
         const randomIndex = Math.floor(Math.random() * images.length);
         img.src = images[randomIndex];
     </script>
+
+
+
+
 
     <button id="back-to-top" style="display:block; position:fixed; bottom:20px; right:20px;">
         <img src="images/cat.jpg" alt="Back to top">
@@ -101,6 +108,9 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
+
+
+
     <div id="spotify-mount"></div>
     <script>
         fetch('/template.html')
