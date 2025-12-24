@@ -64,17 +64,24 @@
     </div>
 
 
-  <button id="back-to-top" style="display:block; position:fixed; bottom:20px; right:20px;">
-    <img src="images/cat.jpg" alt="Back to top">
-  </button>
+    <button id="back-to-top" style="display:block; position:fixed; bottom:20px; right:20px;">
+        <img src="images/cat.jpg" alt="Back to top">
+    </button>
 
-  <script>
-    const btn = document.getElementById("back-to-top");
-    btn.addEventListener("click", () => {
-      window.scrollTo({top:0, behavior:"smooth"});
-    });
-  </script>
-
+    <script>
+        const btn = document.getElementById("back-to-top");
+        btn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+    <div id="spotify-mount"></div>
+    <script>
+        fetch('/template.html')
+            .then(r => r.text())
+            .then(html => {
+                document.getElementById('spotify-mount').innerHTML = html;
+            });
+    </script>
 </body>
 
 

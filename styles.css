@@ -200,7 +200,17 @@ main {
     display: block;
 
 }
-
+.music-player {
+    position: fixed !important;
+    right: 1px;
+    bottom: 1px;
+    z-index: 1000;
+    width: 300px; /* match iframe */
+}
+.music-player iframe {
+  position: static;
+  display: block;
+}
 /*===============================GALLERY===========================*/
 div.gallery-container {
     display: grid;

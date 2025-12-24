@@ -125,8 +125,14 @@
                 </ul>
             </nav>
         </div>
-
-
+        <div id="spotify-mount"></div>
+<script>
+fetch('/template.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('spotify-mount').innerHTML = html;
+  });
+</script>
     </body>
 
 </div>
