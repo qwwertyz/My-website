@@ -226,20 +226,16 @@ div.gallery-container {
 }
 
 div.gallery-item {
-    display: flex;
-  flex-direction: column;
-    position: relative;
-    overflow:hidden;
-    border-radius: 10px;
+    display: block;
     background-color: var(--dustgray);
-    height: 250px; 
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 div.gallery-item img {
-    width: 100%;
-    height : 100%;
     display: block;  /* THIS removes the tiny top/bottom gap */
-    min-height: 270px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -250,6 +246,7 @@ div.gallery-item img:hover {
 }
 
 div.gallery-item.text {
+    margin-top: 5px;
     padding: 0.5rem;
     text-align: center;
     color: var(--white);
