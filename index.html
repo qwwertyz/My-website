@@ -4,8 +4,11 @@
 <html lang="en">
 
 <head>
+    <meta name="author" content="Zoe Yao">
+    <meta name="keywords" content="personal website, portfolio">
+    <meta name="description" content="personal website">
     <link rel="stylesheet" href="styles.css?v=4">
-    <title>Main Page</title>
+    <title>&#2606;Home&#2606;</title>
 </head>
 
 
@@ -13,12 +16,12 @@
 <header class="site-header">
     <div class="header-top">
         <img src="images/nermal.png" alt="Profile" class="profile-pic">
-        <h1>qwwertyz</h1>
+        <h1>Zoe's corner</h1>
     </div>
     <div class="header-nav">
         <ul>
             <li><a href="https://zoeyao.itch.io/">itch.io</a></li>
-            <li><a class="" href="https://github.com/qwwertyz">GitHub</a></li>
+            <li><a class="" href="https://github.com/ZoeYa0">GitHub</a></li>
             <li><a href="mailto:26yaoz86@gmail.com">email</a></li>
         </ul>
     </div>
@@ -34,18 +37,17 @@
 
 
             <h1>about me</h1>
-            <p>hello hello!</p>
-            <p>I'm Zoe, high-school hobby programmer who mostly likes to make games. I just joined hackclub this
-                september and am currently doing milkyway to go to singapore!</p>
+            <p>Hello hello!</p>
+            <p>I'm Zoe, high-school hobby programmer who mostly likes to make games. I joined hackclub this
+                september and am currently doing milkyway to go to Singapore!</p>
             <br>
             <h3>some extra stuff</h3>
             <div class="extra-stuff">
                 <p>-I like memes and cats</p>
-                <p>-if you want to bribe me, buy me food</p>
                 <p>-currently obsessed with cookie run kingdom and drawing a lot fanart of smc</p>
                 <p>-fav movie: puss in boots: the last wish, or godzilla</p>
                 <p>-fav show: breaking bad</p>
-                <p>-I play piano and violin</p>
+                <p>-I play classical piano and violin but I also play a lot of anime music in my free time</p>
             </div>
 
             <br>
@@ -112,15 +114,15 @@
         <div class="right">
             <div class="box" style="color: rgb(56, 82, 130);">
                 <h3>Mood today</h3>
-                <p>&#10054;</p>
-                <p style="color: rgb(56, 82, 130);">please I can't take app season anymore</p>
+                <p style="size:16px;">&#10054;</p>
+                <p style="color: rgb(56, 82, 130);">new year new me??</p>
             </div>
 
             <nav class="box">
                 <ul>
                     <li><a href="cat.html">Cats</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="art.html">art</a></li>
+                    <li><a href="art.html">Art</a></li>
                     <li><a href="ocs.html">OCs</a></li>
                 </ul>
             </nav>
@@ -140,12 +142,26 @@
 
 </div>
 
-<footer>embrace cringe &#8482;
-    <section id="contact">
-
-    </section>
-
+<footer>embrace cringe&#8482;
 </footer>
+
+<footer class="version">
+  Built on commit <span id="commit">loading…</span>
+</footer>
+
+
+<script>
+fetch("https://api.github.com/repos/ZoeYa0/My-website/commits/main")
+  .then(r => r.json())
+  .then(commit => {
+    const short = commit.sha.slice(0, 7);
+    document.getElementById("commit").innerHTML =
+      `<a href="${commit.html_url}" target="_blank">${short}</a>`;
+  })
+  .catch(err => {
+    console.error(err);
+  });
+</script>
 
 
 
