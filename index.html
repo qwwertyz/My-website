@@ -1,170 +1,69 @@
 <!DOCTYPE html>
-
-<!-- always type python -m http.server to start -->
 <html lang="en">
 
 <head>
-    <meta name="author" content="Zoe Yao">
-    <meta name="keywords" content="personal website, portfolio">
-    <meta name="description" content="personal website">
-    <link rel="stylesheet" href="styles.css?v=4">
-    <title>&#2606;Home&#2606;</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe | Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
-
-
-<header class="site-header">
-    <div class="header-top">
-        <img src="images/nermal.png" alt="Profile" class="profile-pic">
-        <h1>Zoe's corner</h1>
-    </div>
-    <div class="header-nav">
+<body>
+    <!-- Navigation -->
+    <nav>
         <ul>
-            <li><a href="https://zoeyao.itch.io/">itch.io</a></li>
-            <li><a class="" href="https://github.com/ZoeYa0">GitHub</a></li>
-            <li><a href="mailto:26yaoz86@gmail.com">email</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="art.html">Art</a></li>
         </ul>
-    </div>
-</header>
+    </nav>
 
+    <!-- Hero / Landing Section -->
+    <section id="home" class="hero">
+        <h1>Zoe Yao</h1>
+        <p>Student Artist & Game Developer</p>
+        <br>
+        <p>Welcome to my portfolio. Here you'll find a selection of my artwork and student projects, highlighting
+            experimentation with art, design, and game development.</p>
+    </section>
 
-
-<div class="layout">
-
-    <body> <!--body shows-->
-        <div class="page">
-            <main class="left">
-
-
-            <h1>about me</h1>
-            <p>Hello hello!</p>
-            <p>I'm Zoe, high-school hobby programmer who mostly likes to make games. I joined hackclub this
-                september and am currently doing milkyway to go to Singapore!</p>
-            <br>
-            <h3>some extra stuff</h3>
-            <div class="extra-stuff">
-                <p>-I like memes and cats</p>
-                <p>-currently obsessed with cookie run kingdom and drawing a lot fanart of smc</p>
-                <p>-fav movie: puss in boots: the last wish, or godzilla</p>
-                <p>-fav show: breaking bad</p>
-                <p>-I play classical piano and violin but I also play a lot of anime music in my free time</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="images/escape room.png" alt="Eagle Pencil Drawing">
+                <a href="projects.html">
+                    <h3>Escape Room capstone project</h3>
+                </a>
+                <p>Focus on shading, texture, and light.</p>
             </div>
-
-            <br>
-            <h1>my projects</h1>
-
-            <h3><a href='https://zoeyao.itch.io/escape-room'>Escape room Part 1: the vanishing scientist</a></h3>
-            <img src="images/escape room.png" alt="img">
-            <p>Part one of a series of puzzle games my friends and I are making for nerds who like math. Also designed
-                for high school students to demonstrate just how fun science can be. [Calculator and BINAS book
-                recommended]</p>
-            <br>
-
-            <h3><a href='https://zoeyao.itch.io/escape-room-part-2'>Escape room Part 2: Apocalypse</a></h3>
-            <img src="images/escaperoom 2.png" alt="k">
-            <p>Part one of a series of puzzle games my friends and I are making for nerds who like math. Also designed
-                for high school students to demonstrate just how fun science can be. [Calculator and BINAS book
-                recommended]</p>
-            <br>
-            <h3><a href='https://zoeyao.itch.io/catnip-clicker'>Catnip clicker</a></h3>
-            <p>Juice, juice!</p>
-            <p>cookie clicker ripoff butttt with a lot of fun stuff</p>
-            <br>
-            <img src="images/catnip clicker.png" alt="img">
-            <br>
-            <h3><a href='?'>Wash the dishes</a></h3>
-            <p>Eat. Sleep. Repeat.</p>
-            <p>Unfinished game about a mood and keeping yourself alive</p>
-            <br>
-            <video width="320" height="180" autoplay muted style="object-fit: fill;">
-
-                <source src="project/film.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <br>
-
-            <h3><a href='https://zoeyao.itch.io/fatty-frog'>Fatty frog (2025)</a></h3>
-
-            <p>Fatty Frog is my first game and was originally made for Shiba
-                Arcade.
-                It's a 2D puzzle platformer game where you jump left and right instead of having 3 buttons (up, left,
-                right)
-                compared to many other platformers. I wanted to experiment with two-key movement and, while making it
-                more
-                puzzel-like than the usual platformers, such as Knight Errant. </p>
-
-            <p>Lore:
-
-                You are Fatty Frog, the leader of the army (group of frogs), admired for your large size. However, after
-                a
-                lengthy winter slumber, you awoke to find that you are no longer overweight. Soooo venture out and
-                consume
-                enough Fatty Flies to regain your esteemed status!</p>
-
-            <br>
-            <video width="320" height="180" autoplay muted>
-                <source src="project/FF v1.0.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </main>
-        </div>
-
-        
-
-        <div class="right">
-            <div class="box" style="color: rgb(56, 82, 130);">
-                <h3>Mood today</h3>
-                <p style="size:16px;">&#10054;</p>
-                <p style="color: rgb(56, 82, 130);">new year new me??</p>
+            <div class="project">
+                <img src="images/catnip clicker.png" alt="img">
+                <a href="projects.html">
+                    <h3>Catnip clicker</h3>
+                </a>
+                <p>cookie clicker ripoff</p>
             </div>
-
-            <nav class="box">
-                <ul>
-                    <li><a href="cat.html">Cats</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="art.html">Art</a></li>
-                    <li><a href="ocs.html">OCs</a></li>
-                </ul>
-            </nav>
+            <div class="project">
+                <img src="art/Bai alt outfit.jpg" alt="Bai">
+                <a href="art.html">
+                    <h3>OC art- Bai</h3>
+                </a>
+                <p>Perspective and structure of narrow streets.</p>
+            </div>
+            <!-- Add more projects here -->
         </div>
-      
-        <div class="music-player">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/1KVT5kNZPExxaxgHkvdj1s?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
-        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <a href=26yaoz86@gmail.com>email</a>
+        <a href="https://github.com/ZoeYa0">GitHub</a>
+        <a href="https://zoeyao.itch.io/">itch.io</a>
+    </section>
 
-
-    </body>
-
-</div>
-
-<footer>embrace cringe&#8482;
-</footer>
-
-<footer class="version">
-  Built on commit <span id="commit">loading…</span>
-</footer>
-
-
-<script>
-fetch("https://api.github.com/repos/ZoeYa0/My-website/commits/main")
-  .then(r => r.json())
-  .then(commit => {
-    const short = commit.sha.slice(0, 7);
-    document.getElementById("commit").innerHTML =
-      `<a href="${commit.html_url}" target="_blank">${short}</a>`;
-  })
-  .catch(err => {
-    console.error(err);
-  });
-</script>
-
-
-
-
+</body>
 
 </html>
