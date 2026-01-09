@@ -22,13 +22,11 @@ body {
     margin: 0 20%;
 }
 
-/* Navigation */
 nav {
-    background: var(--dustgray);
     padding: 1rem 2rem;
-    position: sticky;
     top: 0;
     z-index: 100;
+    background: linear-gradient(135deg, var(--yaleblue), var(--teal));
 }
 
 nav ul {
@@ -39,7 +37,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--graphite);
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -118,32 +116,6 @@ main img{
     margin: 10px auto;    /* center if needed */
 }
 /*===============================NAV===========================*/
-nav {
-    max-width: 200px;
-    min-width: 150px;
-    color: var(--graphite)
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-left: 0;
-    margin: 1rem 0;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background-color: white;
-    text-decoration: underline;
-}
 
 /*===============================MAIN===========================*/
 main {
@@ -180,6 +152,7 @@ main {
     margin: 20px 10px;
     border: 4px solid var(--teal);
     padding: 1rem;
+    
 }
 
 .extra-stuff {
