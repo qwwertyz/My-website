@@ -1,14 +1,21 @@
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme) ![Hackatime Badge](https://hackatime-badge.hackclub.com/U09D27K9XU5/codespaces-blank)
+
+
 
 ## Introduction
-[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
 
-Hello! This is a personal website I made for Athena Awards! I wanted to make this mainly so I would have a place to share my thoughts and art. Update: also shipping to other ysws since I work on this continuously
 
-I started making this by following the tutorial on https://tribute.athena.hackclub.com/, then I shifted to grinding on codeacadmy and w3schools to learn to code, but also chatgpt for debugging.
-The hardest part of all this is definitely making the flexbox work. I followed different tutorials for different parts of the project I wanted to make, but I just ended up with
-10 different classes nested in each other and a mess of a css doc. Then when I finally wanted to get started on fixing the layout flexbox keeps giving up on me
-and everytime I fix something another would break, and I have to go searching through all the classes to figure out what the bug is caused by. My blood and tears...
+Hello! This is Zoe's personal website/portfolio! I made this mainly so I would have a place to share my projects and art. 
 
-What I learned for next time: START WITH THE LAYOUT!! If you start by trying to make everything asthetically perfect it's not going to work. Make the boxes and add contents later. Also
-know what your classes are and which children they have. Saves a lot of work.
+## Features
+- Built with Tailwind CSS
+- Mobile-friendly, responsive layout
+- Simple structure to showcase projects
+
+Live demo: https://zoeya0.github.io/My-website/
+
+
+<p align="center">
+<img width="960" height="440" alt="Dec 22" src="https://github.com/user-attachments/assets/e500a01b-bf37-479c-892b-2f912232d896" />
+</p>
