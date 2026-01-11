@@ -28,36 +28,38 @@
 
 -->
 
-<div class="layout">
-
-    <body> <!--body shows-->
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-        <div class="page">
-            <main class="left">
-
-                <h2>About me</h2>
 
 
-                <p>Hello hello!</p>
-                <p>I'm Zoe, high-school hobby programmer who mostly likes to make games. I started making stuff at a
-                    young age with scratch, then tried many different things, including making a website without code,
-                    game automation code and now I have made my own website and games, which I incorprate my music and art into. </p>
-                <br>
-                <p>In the future I'd like to learn 3D modelling.</p>
+<body> <!--body shows-->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="art.html">Art</a></li>
+    </ul>
+</nav>
 
-                <br>
+    <main class="left">
 
-            </main>
-        </div>
+        <h1>About me</h1>
 
 
+        <p>Hello hello!</p>
+        <p>I'm Zoe, high-school hobby programmer who mostly likes to make games. I started making stuff at a
+            young age with scratch, then tried many different things, including making a website without code,
+            game automation code and now I have made my own website and games, which I incorprate my music and
+            art into. </p>
+        <br>
+        <p>I am currently interested in juice and interaction systems in games, 3D modellin, and I'm learning
+            java for my website.</p>
+
+        <br>
+
+    </main>
+
+
+    <!--
 
         <div class="right">
             <div class="box" style="color: rgb(56, 82, 130);">
@@ -75,8 +77,8 @@
                     <li><a href="ocs.html">OCs</a></li>
                 </ul>
             </nav>
-        </div>
-        <!--
+        </div>-->
+    <!--
         <div class="music-player">
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/playlist/1KVT5kNZPExxaxgHkvdj1s?utm_source=generator" width="100%"
@@ -87,30 +89,7 @@
 
 -->
 
-    </body>
-
-</div>
-
-</footer>
-<footer class="version">
-    Built on commit <span id="commit">loading…</span>
-</footer>
-
-
-<script>
-    fetch("https://api.github.com/repos/ZoeYa0/My-website/commits/main")
-        .then(r => r.json())
-        .then(commit => {
-            const short = commit.sha.slice(0, 7);
-            document.getElementById("commit").innerHTML =
-                `<a href="${commit.html_url}" target="_blank">${short}</a>`;
-        })
-        .catch(err => {
-            console.error(err);
-        });
-</script>
-
-
+</body>
 
 
 

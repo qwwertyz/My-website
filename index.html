@@ -9,62 +9,48 @@
 </head>
 
 <body>
-    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="art.html">Art</a></li>
-            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-
-    <!-- Hero / Landing Section -->
+<main class="bg-photo">
     <section id="home" class="hero">
         <h1>Zoe Yao</h1>
-        <p>Student Artist & Game Developer</p>
+        <p>Game Developer, Artist & Musician</p>
         <br>
-        <p>Welcome to my portfolio. Here you'll find a selection of my artwork and student projects, highlighting
+        <p>Welcome to my portfolio. Here you'll find a selection of my artwork and projects, highlighting
             experimentation with art, design, and game development.</p>
     </section>
+</main>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <img src="images/escape room.png" alt="Eagle Pencil Drawing">
-                <a href="projects.html">
-                    <h3>Escape Room capstone project</h3>
-                </a>
-                <p>Focus on shading, texture, and light.</p>
-            </div>
-            <div class="project">
-                <img src="images/catnip clicker.png" alt="img">
-                <a href="projects.html">
-                    <h3>Catnip clicker</h3>
-                </a>
-                <p>cookie clicker ripoff</p>
-            </div>
-            <div class="project">
-                <img src="art/Bai alt outfit.jpg" alt="Bai">
-                <a href="art.html">
-                    <h3>OC art- Bai</h3>
-                </a>
-                <p>Perspective and structure of narrow streets.</p>
-            </div>
-            <!-- Add more projects here -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <a href=26yaoz86@gmail.com>email</a>
+        <a href=26yaoz86@gmail.com>Email</a>
         <a href="https://github.com/ZoeYa0">GitHub</a>
         <a href="https://zoeyao.itch.io/">itch.io</a>
     </section>
 
 </body>
 
+<footer class="version">
+    Built on commit <span id="commit">loading…</span>
+</footer>
+
+
+<script>
+    fetch("https://api.github.com/repos/ZoeYa0/My-website/commits/main")
+        .then(r => r.json())
+        .then(commit => {
+            const short = commit.sha.slice(0, 7);
+            document.getElementById("commit").innerHTML =
+                `<a href="${commit.html_url}" target="_blank">${short}</a>`;
+        })
+        .catch(err => {
+            console.error(err);
+        });
+</script>
 </html>
